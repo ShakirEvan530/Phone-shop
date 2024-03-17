@@ -11,27 +11,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Hunting Phone API</title>
   </head>
-  <body>
+  <body class="bg-gray-200">
     <header>
-      <h2 class="text-6xl" >Hunting Phone</h2>
+      <h2 class="text-6xl text-center text-cyan-500" >Hunting Phone</h2>
     </header>
 
     <main class="container mx-auto mt-8">
 
         <section class="bg-gray-100 p-4 m-4">
             <input id="search-field" type="text" placeholder="search..." class="input input-bordered w-full max-w-xs" />
-            <button onclick="handleSearch()" class="btn btn-accent">Accent</button>
+            <button onclick="handleSearch()" class="btn btn-accent">Search</button>
             <!-- another search field -->
-            <input id="search-field2" type="text" placeholder="search..." class="input input-bordered w-full max-w-xs" />
-            <button onclick="handleSearch2()" class="btn btn-primary">Primary</button>
+            <!-- <input id="search-field2" type="text" placeholder="search..." class="input input-bordered w-full max-w-xs" />
+            <button onclick="handleSearch2()" class="btn btn-primary">Primary</button> -->
         </section>
-
-        <!-- spinner or loader -->
-
-
         <!-- search result -->
         
         <section>
+          <!-- spinner or loader -->
             <div id="loading-spinner" class="text-center my-40 hidden">
                 <span class="loading loading-spinner text-info"></span>
             </div>
@@ -39,7 +36,7 @@
             </div>
             <!-- show all button -->
             <div id="show-all-container" class="hidden text-center my-8">
-                <button class="btn btn-secondary">Show All</button>
+                <button onclick="handleShowAll()" class="btn btn-secondary">Show All</button>
             </div>
         </section>
 
